@@ -34,8 +34,8 @@ const page = () => {
   }, []);
 
   return (
-    <div className="w-full flex justify-center gap-20">
-      <section className="max-w-[950px] w-full">
+    <div className="w-full flex justify-center sm:gap-20 mt-[125px] sm:mt-[50px] p-2">
+      <section className="max-w-[950px] w-full px-6 border-x border-neutral-200">
         <div className="bg-blue-50 w-full p-6 flex justify-between gap-6 border border-neutral-200 rounded-xl">
           <div className="w-[25px] flex items-center justify-center">
             <MdInfoOutline className="gray-icon" size={25} />
@@ -50,11 +50,11 @@ const page = () => {
           </div>
         </div>
 
-        <div className="flex justify-center w-full items-center">
-          <h1 className="py-14 text-4xl font-bold w-full">Top Questions</h1>
+        <div className="flex w-full items-center sm:flex-nowrap flex-wrap py-14">
+          <h1 className="text-4xl font-bold w-full">Top Questions</h1>
           <Link
             href={"/blog/create-post"}
-            className="bg-blue-400 text-white rounded-xl h-[40px] cursor-pointer w-[150px] p-4 flex items-center justify-center transition-all duration-300 hover:bg-blue-500"
+            className="bg-blue-400 text-white rounded-xl h-[40px] cursor-pointer w-[150px] p-4 flex items-center justify-center transition-all duration-300 hover:bg-blue-500 mt-4 sm:mt-0"
           >
             Publicar
           </Link>
@@ -75,10 +75,7 @@ const page = () => {
 
         <div className="mt-16">
           {data.map((post: PostProps, index: number) => (
-            <>
-              <Post content={post} />
-              <Post content={post} />
-            </>
+            <Post content={post} key={index} showAnswerButton={true} />
           ))}
         </div>
       </section>

@@ -18,7 +18,8 @@ export default function Home() {
             </h1>
           </div>
           <h2 className="text-xl text-[#717171] max-w-[450px]">
-            Bem-vindo ao universo aonde não existe o impossível! quem não ouve a melodia acha maluco quem dança, faça parte!
+            Bem-vindo ao universo aonde não existe o impossível! quem não ouve a
+            melodia acha maluco quem dança, faça parte!
           </h2>
 
           <div className="mt-12">

@@ -73,7 +73,7 @@ const page = () => {
   async function createPost(data: CreatePostFormData) {
     if (data) {
       try {
-        const stringTopics = data.topics.map(item => item.topic);
+        const stringTopics = data.topics.map((item) => item.topic);
 
         const response = await fetch("http://localhost:3030/post/create", {
           method: "POST",
@@ -107,9 +107,9 @@ const page = () => {
   }
 
   return (
-    <div className="w-full flex justify-center gap-20">
+    <div className="w-full flex justify-center sm:gap-20 mt-[125px] sm:mt-[50px] p-2">
       <ToastMessage />
-      <section className="max-w-[950px] w-full">
+      <section className="max-w-[950px] w-full px-6 border-x border-neutral-200">
         <h1 className="text-4xl font-bold mb-10">Adicionar Postagem</h1>
 
         <div className="bg-blue-50 w-full p-6 flex gap-6 border border-neutral-200 rounded-xl">
@@ -173,8 +173,8 @@ const page = () => {
           <div className="p-6 border border-neutral-200 rounded-xl mt-12">
             <h1 className="text-xl">Quais são os detalhes do seu problema?</h1>
             <h2 className="text-[#717171] text-sm mb-6">
-              Adicione de 2 a 5 tags para descrever o assunto da sua pergunta.
-              Comece a digitar para ver sugestões.
+              Seja específico e imagine que você está fazendo uma pergunta a
+              outra pessoa.
             </h2>
             <TextEditor value={content} setValue={setContent} />
           </div>
@@ -184,8 +184,8 @@ const page = () => {
               <div className="w-full">
                 <h1 className="text-xl">Tags</h1>
                 <h2 className="text-[#717171] text-sm">
-                  Seja específico e imagine que você está fazendo uma pergunta a
-                  outra pessoa.
+                  Adicione de 2 a 5 tags para descrever o assunto da sua
+                  pergunta. Comece a digitar para ver sugestões.
                 </h2>
               </div>
               <div className="w-full flex justify-end items-center">

@@ -11,9 +11,7 @@ const Footer = () => {
             BADUMTS
           </h1>
           <p className="text-gray-700 mt-2">Projeto de TCC</p>
-          <p className="text-gray-700">
-            ETEC Dr. Prof. José Dagnoni
-          </p>
+          <p className="text-gray-700">ETEC Dr. Prof. José Dagnoni</p>
         </div>
         <div className="w-full flex gap-6 flex-wrap sm:flex-nowrap mt-16 sm:mt-0">
           {footerLinks.map((link: any, index: number) => (
@@ -23,11 +21,7 @@ const Footer = () => {
             >
               <h3 className="font-bold">{link.title}</h3>
               {link.links.map((link: any, index: number) => (
-                <Link
-                  key={index}
-                  href={link.url}
-                  className="text-gray-500"
-                >
+                <Link key={index} href={link.url} className="text-gray-500">
                   {link.title}
                 </Link>
               ))}
