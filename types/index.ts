@@ -16,6 +16,7 @@ export interface PersonProps {
   photo: string;
   email: string;
   description: string;
+  techs: string[];
   linkedin: string;
   github: string;
 }
@@ -47,4 +48,12 @@ export interface PostProps {
   content: string;
   created: Date;
   topics: string[];
+}
+
+export interface PopupProps {
+  children: React.ReactNode;
+  title: string;
+  description?: string;
+  showState?: any;
+  handleSubmit?: () => void;
 }

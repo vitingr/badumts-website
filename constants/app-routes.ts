@@ -4,7 +4,7 @@ export const APP_ROUTES = {
     blog: "/blog",
     documentation: "/documentation",
     guide: "guide",
-    support: "/support"
+    support: "/support",
   },
   public: {
     home: "/",
