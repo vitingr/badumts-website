@@ -21,7 +21,7 @@ const Person = ({ personData }: { personData: PersonProps }) => {
         {personData.email}
       </h2>
       <div className="mt-4">
-        <p className="">{personData.description}</p>
+        <p className="sm:text-[#3e3e3e] text-[#717171]">{personData.description}</p>
       </div>
       <div className="py-4 w-full flex gap-2 flex-wrap h-[80px]">
         {personData.techs.map((tech: string, index: number) => (
