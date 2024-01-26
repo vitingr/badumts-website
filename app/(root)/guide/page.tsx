@@ -3,11 +3,11 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="w-full flex flex-col items-center p-2 sm:p-0">
+    <div className="w-full flex flex-col items-center p-2 sm:p-0 p-[2%] sm:p-[5%]">
       <section className="w-full bg-blue-50 rounded-xl p-20 flex flex-col items-center sm:flex-nowrap flex-wrap">
-        <span className="text-xl underline underline-offset-4">Features</span>
+        <span className="text-xl underline underline-offset-4 mt-10 sm:mt-0">Features</span>
         <h1 className="text-4xl font-bold mt-2 text-center">Nosso guia para você</h1>
-        <p className="text-center mt-10 max-w-[450px] sm:text-[#3e3e3e] text-[#717171]">
+        <p className="text-center mt-10 max-w-[450px] sm:text-[#3e3e3e] text-[#626B7F]">
           Nessa seção você poderá conferir todas as informações relacionadas ao
           nosso dispositivo, além disso, tudo que é necessário para utiliza-lô
           está contido aqui
@@ -34,7 +34,7 @@ const page = () => {
                 o BADUMTS?.
               </h1>
             </div>
-            <h2 className="sm:text-xl text-[#717171] max-w-[450px] mt-4">
+            <h2 className="sm:text-xl text-[#626B7F] max-w-[450px] mt-4">
               Neste guia, forneceremos todas as informações necessárias para
               montar, configurar e utilizar o dispositivo de forma eficaz!
               Materiais:
@@ -104,7 +104,7 @@ const page = () => {
                 de Montagem.
               </h1>
             </div>
-            <h2 className="sm:text-xl text-[#717171] w-full mt-4 text-right">
+            <h2 className="sm:text-xl text-[#626B7F] w-full mt-4 text-right">
               Montar o nosso dispositivo é um processo extremamente simples e
               empolgante. Siga os passos abaixo para garantir uma montagem
               bem-sucedida do seu produto:
@@ -157,7 +157,7 @@ const page = () => {
                 Configuração
               </h1>
             </div>
-            <h2 className="sm:text-xl text-[#717171] max-w-[450px] mt-4">
+            <h2 className="sm:text-xl text-[#626B7F] max-w-[450px] mt-4">
               Antes de ligar e conectar o seu dispositivo, certifique-se de
               seguir as etapas corretas para conexão e configuração Conecte o
               dispositivo no nosso esquema e carregue o respectivo código fonte

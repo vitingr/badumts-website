@@ -5,18 +5,18 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="w-full flex flex-col items-center p-[2%] sm:p-[5%]">
       <section className="w-full flex justify-between sm:flex-nowrap flex-wrap gap-12 max-w-[1250px] p-6 sm:p-10">
         <div className="w-full">
           <div className="flex flex-col">
-            <h1 className="font sm:text-[72px] text-4xl sm:text-6xl cursor-default">
+            <h1 className="font sm:text-[72px] text-5xl sm:text-6xl cursor-default">
               Bem-Vindo
             </h1>
-            <h1 className="font sm:text-[72px] text-4xl sm:text-6xl sm:-mt-4 cursor-default">
+            <h1 className="font sm:text-[72px] text-5xl sm:text-6xl sm:-mt-4 cursor-default">
               ao BADUMTS.
             </h1>
           </div>
-          <h2 className="sm:text-xl text-[#717171] max-w-[450px]">
+          <h2 className="sm:text-xl text-[#626B7F] max-w-[450px]">
             Bem-vindo ao universo aonde não existe o impossível! quem não ouve a
             melodia acha maluco quem dança, faça parte!
           </h2>
@@ -84,7 +84,7 @@ export default function Home() {
       </section>
 
       <h1 className="mt-[5.2em] mb-20 w-full text-center font-[500] text-5xl cursor-default p-6">
-        Fornecendo{" "}
+        Eai, {" "}
         <span className="font-[500] text-transparent text-5xl bg-clip-text bg-gradient-to-r from-[#6C47FF] to-[#5BC5EF]">
           Que tal fazer
         </span>{" "}
@@ -100,14 +100,14 @@ export default function Home() {
         <div className="w-full">//imagem do produto</div>
         <div className="w-full">
           <h1 className="text-4xl font-bold">Nosso Projeto</h1>
-          <p className="text-justify mt-2 text-lg sm:text-[#3e3e3e] text-[#717171]">
+          <p className="text-justify mt-2 text-lg sm:text-[#3e3e3e] text-[#626B7F]">
             Nosso projeto possui como sua principal finalidade a oportunidade de
             proporcionar a possibilidade de qualquer pessoa adquirir um
             instrumento musical, promovendo a acessibilidade das pessoas no
             âmbito musical e artístico
           </p>
 
-          <div className="flex gap-2 items-center text-lg text-[#717171] mt-10">
+          <div className="flex gap-2 items-center text-lg text-[#626B7F] mt-10">
             <pre className="text-blue-400">#badumts</pre>
             <pre className="text-blue-400">#façabarulho</pre>
             <pre className="text-blue-400">#musica</pre>

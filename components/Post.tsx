@@ -28,14 +28,14 @@ const Post = ({
           {content.creatorName} -{" "}
           <span className="font-normal">{content.title}</span>
         </h1>
-        <h3 className="text-[#717171] text-xs mb-4">
+        <h3 className="text-[#626B7F] text-xs mb-4">
           {content.created.toLocaleString()}
         </h3>
         <HtmlContent html={content.content} />
         <div className="flex justify-between w-full items-center">
           <div className="flex gap-1 mt-6 items-center w-full">
             <AiOutlineHeart className="gray-icon cursor-pointer" size={16} />
-            <p className="text-xs text-[#717171]">
+            <p className="text-xs text-[#626B7F]">
               {content.qtdLikes} curtidas
             </p>
           </div>

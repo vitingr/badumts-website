@@ -35,7 +35,7 @@ const Popup = ({
             )}
           </div>
           {description && (
-            <p className="text-[#717171] mt-2 mb-6">{description}</p>
+            <p className="text-[#626B7F] mt-2 mb-6">{description}</p>
           )}
           <div>{children}</div>
         </div>

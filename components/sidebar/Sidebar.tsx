@@ -7,7 +7,7 @@ const Sidebar = () => {
         <h1 className="pb-2 mb-2 border-b border-neutral-200 font-bold text-xl">
           Tags Favoritas
         </h1>
-        <p className="mt-2 text-[#717171]">
+        <p className="mt-2 text-[#626B7F]">
           Selecione algumas tags para acompanhar posts e dúvidas relacionadas ao
           tema desejado.
         </p>
@@ -19,7 +19,7 @@ const Sidebar = () => {
         <h1 className="pb-2 mb-2 border-b border-neutral-200 font-bold text-xl">
           Tags Ignoradas
         </h1>
-        <p className="mt-2 text-[#717171]">
+        <p className="mt-2 text-[#626B7F]">
           Selecione algumas tags nas quais posts e dúvidas relacionadas ao tema
           sejam ocultados.
         </p>
@@ -31,7 +31,7 @@ const Sidebar = () => {
         <h1 className="pb-2 mb-2 border-b border-neutral-200 font-bold text-xl">
           Watched Tags
         </h1>
-        <p className="mt-2 text-[#717171]">
+        <p className="mt-2 text-[#626B7F]">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
           soluta perspiciatis, adipisci odio totam ducimus quidem, sit maiores,
           voluptates ab nobis impedit distinctio nesciunt expedita. Non, nisi?
