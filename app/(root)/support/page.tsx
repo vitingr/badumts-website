@@ -1,11 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import Configuration from "openai";
 import OpenAIApi from "openai";
 import Sidebar from "@/components/sidebar/Sidebar";
-import Image from "next/image";
-import { infoUser } from "@/contexts/UserContext";
 import AiChat from "@/components/AiChat";
 
 const page = () => {
