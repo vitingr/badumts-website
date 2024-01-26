@@ -1,5 +1,4 @@
 import Person from "@/components/Person";
-import Loader from "@/components/config/Loader";
 import { group_members } from "@/constants/group";
 import { PersonProps } from "@/types";
 import Image from "next/image";
