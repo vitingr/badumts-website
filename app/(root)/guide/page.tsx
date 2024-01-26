@@ -3,7 +3,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="w-full flex flex-col items-center p-2 sm:p-0 p-[2%] sm:p-[5%]">
+    <div className="w-full flex flex-col items-center p-6 sm:p-[5%]">
       <section className="w-full bg-blue-50 rounded-xl p-20 flex flex-col items-center sm:flex-nowrap flex-wrap">
         <span className="text-xl underline underline-offset-4 mt-10 sm:mt-0">Features</span>
         <h1 className="text-4xl font-bold mt-2 text-center">Nosso guia para você</h1>

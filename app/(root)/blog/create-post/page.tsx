@@ -107,7 +107,7 @@ const page = () => {
   }
 
   return (
-    <div className="w-full flex justify-center sm:gap-20 mt-[125px] sm:mt-[50px] p-2 p-[2%] sm:p-[5%]">
+    <div className="w-full flex justify-center sm:gap-20 mt-[125px] sm:mt-[50px] p-6 sm:p-[5%]">
       <ToastMessage />
       <section className="max-w-[950px] w-full px-6 border-x border-neutral-200">
         <h1 className="text-4xl font-bold mb-10">Adicionar Postagem</h1>

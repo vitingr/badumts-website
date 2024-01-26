@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="w-full flex flex-col items-center p-[2%] sm:p-[5%]">
+    <div className="w-full flex flex-col items-center p-6 sm:p-[5%]">
       <section className="w-full flex justify-between sm:flex-nowrap flex-wrap gap-12 max-w-[1250px] p-6 sm:p-10">
         <div className="w-full">
           <div className="flex flex-col">
