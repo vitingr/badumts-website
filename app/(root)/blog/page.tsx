@@ -16,7 +16,7 @@ const page = () => {
 
   const getAllPosts = async () => {
     try {
-      const requisition = await fetch("http://localhost:3030/post", {
+      const requisition = await fetch("https://badumts.onrender.com/post", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
