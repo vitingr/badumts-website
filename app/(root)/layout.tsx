@@ -67,7 +67,7 @@ export default function RootLayout({
               <SignedIn>
                 <UserProvider>
                   <Navbar />
-                  <main className="min-h-[82vh] w-full sm:pt-[150px] flex flex-col items-center">
+                  <main className="min-h-[82vh] w-full sm:pt-[85px] flex flex-col items-center">
                     {children}
                   </main>
                   <Footer />
