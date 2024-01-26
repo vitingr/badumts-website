@@ -39,7 +39,7 @@ const page = () => {
   };
 
   return (
-    <div className="w-full flex justify-center gap-20 mt-[125px] sm:mt-[50px] p-6 p-[2%] sm:p-[5%]">
+    <div className="w-full flex justify-center gap-20 mt-[125px] sm:mt-[50px] p-6 sm:p-[5%]">
       <section className="max-w-[850px] w-full">
         <h1 className="text-4xl font-bold">
           O que você gostaria de perguntar?

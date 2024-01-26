@@ -120,7 +120,7 @@ const page = () => {
     postData &&
     postData.id !== "" && (
       <Suspense>
-        <div className='w-full flex justify-center sm:gap-12 mt-[125px] sm:mt-[50px] p-[2%] sm:p-[5%]'>
+        <div className='w-full flex justify-center sm:gap-12 mt-[125px] sm:mt-[50px] p-6 sm:p-[5%]'>
           <ToastMessage />
           <section className="max-w-[950px] w-full px-6 border-x border-neutral-200">
             <h1 className="text-4xl font-bold">Postagem</h1>
