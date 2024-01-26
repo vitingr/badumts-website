@@ -12,7 +12,7 @@ const page = () => {
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  const apiKey = "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";
+  const apiKey = "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";
 
   const handleClick = async () => {
     setChats((prevChats) => [...prevChats, { text: query, creator: "user" }]);
@@ -72,8 +72,17 @@ const page = () => {
           </button>
         </div>
         {isLoading && (
-          <div className="mt-6 w-full text-justify text-[#626B7F]">
-            Carregando...
+          <div className="my-8 w-full flex justify-center items-center text-justify text-[#626B7F]">
+            <div className="dot-spinner">
+              <div className="dot-spinner__dot"></div>
+              <div className="dot-spinner__dot"></div>
+              <div className="dot-spinner__dot"></div>
+              <div className="dot-spinner__dot"></div>
+              <div className="dot-spinner__dot"></div>
+              <div className="dot-spinner__dot"></div>
+              <div className="dot-spinner__dot"></div>
+              <div className="dot-spinner__dot"></div>
+            </div>
           </div>
         )}
         {chats.length > 0 ? (
