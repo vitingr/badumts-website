@@ -30,7 +30,7 @@ const page = () => {
   // Get All The Post Data and Resposts based on the query
   async function getPostData() {
     try {
-      const requisition = await fetch(`http://localhost:3030/post/${query}`, {
+      const requisition = await fetch(`https://badumts.onrender.com/post/${query}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -46,7 +46,7 @@ const page = () => {
   async function getAllChildPosts() {
     try {
       const requisition = await fetch(
-        `http://localhost:3030/post/postChild/${query}`,
+        `https://badumts.onrender.com/post/postChild/${query}`,
         {
           method: "GET",
           headers: {
@@ -69,7 +69,7 @@ const page = () => {
   async function createPost() {
     try {
       if (query != "") {
-        const response = await fetch("http://localhost:3030/post/create", {
+        const response = await fetch("https://badumts.onrender.com/post/create", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

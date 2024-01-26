@@ -15,7 +15,7 @@ const page = () => {
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  const apiKey = "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";
+  const apiKey = "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";
 
   const handleClick = async () => {
     setChats((prevChats) => [...prevChats, { text: query, creator: "user" }]);

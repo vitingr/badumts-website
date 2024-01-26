@@ -75,7 +75,7 @@ const page = () => {
       try {
         const stringTopics = data.topics.map((item) => item.topic);
 
-        const response = await fetch("http://localhost:3030/post/create", {
+        const response = await fetch("https://badumts.onrender.com/post/create", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
