@@ -16,7 +16,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
 
   return (
-    <header className="fixed bg-white w-full flex justify-center sm:p-6 p-4 z-50 shadow-sm shadow-neutral-100">
+    <header className="fixed bg-white w-full flex justify-center p-6 z-50 shadow-sm shadow-neutral-100">
       <nav className="max-w-[1950px] bg-transparent w-full flex sm:justify-between sm:gap-12">
         <h1 className="sm:w-full flex justify-left sm:justify-center items-center font-bold text-2xl sm:text-3xl text-blue-400 cursor-default">
           badumts
@@ -80,9 +80,9 @@ const Navbar = () => {
                 <p className="text-sm text-[#717171]">
                   Precisa de ajuda? experimente o nosso novo recurso, a IA Getúlio! Ela sempre estará disponível para te ajudar.
                 </p>
-                <h2 className="mt-6 text-blue-400 font-bold text-sm">
+                <Link href={"/support"} className="mt-6 text-blue-400 font-bold text-sm">
                   Beleza
-                </h2>
+                </Link>
               </div>
             </div>
             <div className="px-10 py-6 sm:gap-8 gap-6 w-full flex flex-col">

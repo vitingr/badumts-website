@@ -44,7 +44,7 @@ const page = () => {
         <h1 className="text-4xl font-bold">
           O que você gostaria de perguntar?
         </h1>
-        <h3 className="text-[#717171]">
+        <h3 className="text-[#717171 mt-2">
           Bem-Vindo ao nosso menu de suporte, aqui você pode tirar algumas de
           suas dúvidas com a nossa inteligência artificial chamada Getúlio, bom
           uso!
