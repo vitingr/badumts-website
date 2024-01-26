@@ -7,9 +7,9 @@ const nextConfig = {
   },
   experimental: {
       serverComponentsExternalPackages: ["mongoose"],
+      missingSuspenseWithCSRBailout: false,
   },
   reactStrictMode: false,
-  missingSuspenseWithCSRBailout: false,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')]
   },
