@@ -39,12 +39,12 @@ const page = () => {
   };
 
   return (
-    <div className="w-full flex justify-center gap-20 mt-[125px] sm:mt-[50px] p-6">
+    <div className="w-full flex justify-center gap-20 mt-[125px] sm:mt-[50px] p-6 p-[2%] sm:p-[5%]">
       <section className="max-w-[850px] w-full">
         <h1 className="text-4xl font-bold">
           O que você gostaria de perguntar?
         </h1>
-        <h3 className="text-[#717171 mt-2">
+        <h3 className="text-[#626B7F] mt-2">
           Bem-Vindo ao nosso menu de suporte, aqui você pode tirar algumas de
           suas dúvidas com a nossa inteligência artificial chamada Getúlio, bom
           uso!
@@ -72,7 +72,7 @@ const page = () => {
           </button>
         </div>
         {isLoading && (
-          <div className="mt-6 w-full text-justify text-[#717171]">
+          <div className="mt-6 w-full text-justify text-[#626B7F]">
             Carregando...
           </div>
         )}
@@ -83,7 +83,7 @@ const page = () => {
             ))}
           </>
         ) : (
-          <p className="w-full text-center text-lg text-[#717171] mt-16">
+          <p className="w-full text-center text-lg text-[#626B7F] mt-16">
             Você ainda não possui nenhuma conversa com Getúlio, que tal iniciar
             uma?
           </p>

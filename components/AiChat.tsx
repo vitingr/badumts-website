@@ -20,7 +20,7 @@ const AiChat = ({ chat }: { chat: AiChatProps }) => {
         className="rounded-full w-[35px] h-[35px]"
       />
       {chat && chat.text && (
-        <p className="text-justify text-[#717171]">
+        <p className="text-justify text-[#626B7F]">
           <span className="font-bold mr-2">Getúlio:</span>
           {chat.text}
         </p>
@@ -36,7 +36,7 @@ const AiChat = ({ chat }: { chat: AiChatProps }) => {
         className="rounded-full w-[35px] h-[35px]"
       />
       {chat && chat.text && (
-        <p className="text-justify text-[#717171]">
+        <p className="text-justify text-[#626B7F]">
           <span className="font-bold mr-2">Você:</span>
           {chat.text}
         </p>

@@ -107,7 +107,7 @@ const page = () => {
   }
 
   return (
-    <div className="w-full flex justify-center sm:gap-20 mt-[125px] sm:mt-[50px] p-2">
+    <div className="w-full flex justify-center sm:gap-20 mt-[125px] sm:mt-[50px] p-2 p-[2%] sm:p-[5%]">
       <ToastMessage />
       <section className="max-w-[950px] w-full px-6 border-x border-neutral-200">
         <h1 className="text-4xl font-bold mb-10">Adicionar Postagem</h1>
@@ -127,20 +127,20 @@ const page = () => {
             </p>
 
             <h2 className="text-lg font-bold mt-4">Dicas:</h2>
-            <li className="ml-1 text-[#717171] text-sm">
+            <li className="ml-1 text-[#626B7F] text-sm">
               Resuma seu problema em um título de uma linha.
             </li>
-            <li className="ml-1 text-[#717171] text-sm">
+            <li className="ml-1 text-[#626B7F] text-sm">
               Descreva seu problema com mais detalhes.
             </li>
-            <li className="ml-1 text-[#717171] text-sm">
+            <li className="ml-1 text-[#626B7F] text-sm">
               Descreva o que você tentou e o que esperava que acontecesse.
             </li>
-            <li className="ml-1 text-[#717171] text-sm">
+            <li className="ml-1 text-[#626B7F] text-sm">
               Adicione “tags” que ajudam a divulgar sua pergunta aos membros da
               comunidade.
             </li>
-            <li className="ml-1 text-[#717171] text-sm">
+            <li className="ml-1 text-[#626B7F] text-sm">
               Revise sua pergunta e poste-a no site.
             </li>
           </div>
@@ -149,7 +149,7 @@ const page = () => {
         <form onSubmit={handleSubmit(createPost)} className="w-full">
           <div className="p-6 border border-neutral-200 rounded-xl mt-12">
             <h1 className="text-xl">Título</h1>
-            <h2 className="text-[#717171] text-sm">
+            <h2 className="text-[#626B7F] text-sm">
               Seja específico e imagine que você está fazendo uma pergunta a
               outra pessoa.
             </h2>
@@ -172,7 +172,7 @@ const page = () => {
 
           <div className="p-6 border border-neutral-200 rounded-xl mt-12">
             <h1 className="text-xl">Quais são os detalhes do seu problema?</h1>
-            <h2 className="text-[#717171] text-sm mb-6">
+            <h2 className="text-[#626B7F] text-sm mb-6">
               Seja específico e imagine que você está fazendo uma pergunta a
               outra pessoa.
             </h2>
@@ -183,7 +183,7 @@ const page = () => {
             <div className="flex justify-between w-full items-center">
               <div className="w-full">
                 <h1 className="text-xl">Tags</h1>
-                <h2 className="text-[#717171] text-sm">
+                <h2 className="text-[#626B7F] text-sm">
                   Adicione de 2 a 5 tags para descrever o assunto da sua
                   pergunta. Comece a digitar para ver sugestões.
                 </h2>

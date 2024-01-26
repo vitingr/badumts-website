@@ -120,7 +120,7 @@ const page = () => {
     postData &&
     postData.id !== "" && (
       <Suspense>
-        <div className=' className="w-full flex justify-center sm:gap-12 mt-[125px] sm:mt-[50px] p-2"'>
+        <div className='w-full flex justify-center sm:gap-12 mt-[125px] sm:mt-[50px] p-[2%] sm:p-[5%]'>
           <ToastMessage />
           <section className="max-w-[950px] w-full px-6 border-x border-neutral-200">
             <h1 className="text-4xl font-bold">Postagem</h1>
@@ -139,7 +139,7 @@ const page = () => {
                 />
                 <div className="w-full">
                   <h1 className="font-bold">{postData.creatorName}</h1>
-                  <h3 className="text-xs text-[#717171]">
+                  <h3 className="text-xs text-[#626B7F]">
                     {postData.created.toLocaleString()}
                   </h3>
                 </div>
@@ -189,7 +189,7 @@ const page = () => {
                 ))}
               </div>
             ) : (
-              <p className="mt-12 text-center w-full text-[#717171]">
+              <p className="mt-12 text-center w-full text-[#626B7F]">
                 Ninguém interagiu com essa postagem até o momento
               </p>
             )}

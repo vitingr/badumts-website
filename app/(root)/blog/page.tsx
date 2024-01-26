@@ -34,7 +34,7 @@ const page = () => {
   }, []);
 
   return (
-    <div className="w-full flex justify-center sm:gap-20 mt-[125px] sm:mt-[50px] p-2">
+    <div className="w-full flex justify-center sm:gap-20 mt-[125px] sm:mt-[50px] p-[2%] sm:p-[5%]">
       <section className="max-w-[950px] w-full px-6 border-x border-neutral-200">
         <div className="bg-blue-50 w-full p-6 flex justify-between gap-6 border border-neutral-200 rounded-xl">
           <div className="w-[25px] flex items-center justify-center">
@@ -65,7 +65,7 @@ const page = () => {
             type="text"
             name="search"
             id="search"
-            className="outline-none w-full border-b border-neutral-200 py-2 transition-all duration-300 text-[#717171] text-sm"
+            className="outline-none w-full border-b border-neutral-200 py-2 transition-all duration-300 text-[#626B7F] text-sm"
             placeholder="O que você está procurando?"
             autoComplete="off"
             maxLength={60}
