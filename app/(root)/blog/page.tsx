@@ -34,9 +34,9 @@ const page = () => {
   }, []);
 
   return (
-    <div className="w-full flex justify-center sm:gap-20 mt-[125px] sm:mt-[50px] p-6 sm:p-[5%]">
-      <section className="max-w-[950px] w-full px-6 border-x border-neutral-200">
-        <div className="bg-blue-50 w-full p-6 flex justify-between gap-6 border border-neutral-200 rounded-xl">
+    <div className="w-full flex justify-center sm:gap-12 mt-[125px] sm:mt-[50px] p-6 sm:p-[3%]">
+      <section className="max-w-[950px] w-full px-6">
+        <div className="bg-blue-50 w-full p-6 flex justify-between gap-6 border border-slate-200 rounded-xl">
           <div className="w-[25px] flex items-center justify-center">
             <MdInfoOutline className="gray-icon" size={25} />
           </div>
@@ -54,18 +54,18 @@ const page = () => {
           <h1 className="text-4xl font-bold w-full">Top Questions</h1>
           <Link
             href={"/blog/create-post"}
-            className="bg-blue-400 text-white rounded-xl h-[40px] cursor-pointer w-[150px] p-4 flex items-center justify-center transition-all duration-300 hover:bg-blue-500 mt-4 sm:mt-0"
+            className="bg-blue-400 text-white rounded-xl h-[40px] cursor-pointer w-[150px] p-2 flex items-center justify-center transition-all duration-300 hover:bg-blue-500 mt-4 sm:mt-0"
           >
             Publicar
           </Link>
         </div>
 
-        <div className="flex gap-4 w-full p-6 border border-neutral-200 rounded-xl items-center">
+        <div className="flex gap-4 w-full p-6 border border-slate-200 rounded-xl items-center">
           <input
             type="text"
             name="search"
             id="search"
-            className="outline-none w-full border-b border-neutral-200 py-2 transition-all duration-300 text-[#626B7F] text-sm"
+            className="outline-none w-full border-b border-slate-200 py-2 transition-all duration-300 text-[#626B7F] text-sm"
             placeholder="O que você está procurando?"
             autoComplete="off"
             maxLength={60}
@@ -75,7 +75,7 @@ const page = () => {
 
         <div className="mt-16">
           {data.map((post: PostProps, index: number) => (
-            <Post content={post} key={index} showAnswerButton={true} />
+            <Post content={post} key={index} showAnswerButton={true} refetch={getAllPosts} />
           ))}
         </div>
       </section>

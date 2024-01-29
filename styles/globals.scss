@@ -24,6 +24,16 @@
   color: #394356;
 }
 
+.colored-icon * {
+  color: #a70d55;
+  transition-timing-function: ease-in-out;
+  transition-duration: .3s;
+}
+
+.colored-icon:hover * {
+  color: #91124d;
+}
+
 .docs-icon * {
   color: #a5b3e6;
   transition-timing-function: ease-in-out;

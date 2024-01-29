@@ -107,12 +107,12 @@ const page = () => {
   }
 
   return (
-    <div className="w-full flex justify-center sm:gap-20 mt-[125px] sm:mt-[50px] p-6 sm:p-[5%]">
+    <div className="w-full flex justify-center sm:gap-12 mt-[125px] sm:mt-[50px] p-6 sm:p-[3%]">
       <ToastMessage />
-      <section className="max-w-[950px] w-full px-6 border-x border-neutral-200">
+      <section className="max-w-[950px] w-full px-6 border-x border-slate-200">
         <h1 className="text-4xl font-bold mb-10">Adicionar Postagem</h1>
 
-        <div className="bg-blue-50 w-full p-6 flex gap-6 border border-neutral-200 rounded-xl">
+        <div className="bg-blue-50 w-full p-6 flex gap-6 border border-slate-200 rounded-xl">
           <div className="w-full">
             <h1 className="font-bold text-2xl">Escrevendo uma boa pergunta</h1>
             <p className="text-sm mt-4">
@@ -147,7 +147,7 @@ const page = () => {
         </div>
 
         <form onSubmit={handleSubmit(createPost)} className="w-full">
-          <div className="p-6 border border-neutral-200 rounded-xl mt-12">
+          <div className="p-6 border border-slate-200 rounded-xl mt-12">
             <h1 className="text-xl">Título</h1>
             <h2 className="text-[#626B7F] text-sm">
               Seja específico e imagine que você está fazendo uma pergunta a
@@ -156,7 +156,7 @@ const page = () => {
             <input
               type="text"
               id="title"
-              className="outline-none py-2 px-4 border border-neutral-200 w-full rounded-lg mt-6"
+              className="outline-none py-2 px-4 border border-slate-200 w-full rounded-lg mt-6"
               autoComplete="off"
               placeholder="Digite um título para sua postagem"
               minLength={4}
@@ -170,7 +170,7 @@ const page = () => {
             )}
           </div>
 
-          <div className="p-6 border border-neutral-200 rounded-xl mt-12">
+          <div className="p-6 border border-slate-200 rounded-xl mt-12">
             <h1 className="text-xl">Quais são os detalhes do seu problema?</h1>
             <h2 className="text-[#626B7F] text-sm mb-6">
               Seja específico e imagine que você está fazendo uma pergunta a
@@ -179,7 +179,7 @@ const page = () => {
             <TextEditor value={content} setValue={setContent} />
           </div>
 
-          <div className="p-6 border border-neutral-200 rounded-xl mt-12">
+          <div className="p-6 border border-slate-200 rounded-xl mt-12">
             <div className="flex justify-between w-full items-center">
               <div className="w-full">
                 <h1 className="text-xl">Tags</h1>
@@ -204,7 +204,7 @@ const page = () => {
                   <input
                     type="text"
                     id="title"
-                    className="outline-none py-2 px-4 border border-neutral-200 w-full rounded-lg"
+                    className="outline-none py-2 px-4 border border-slate-200 w-full rounded-lg"
                     autoComplete="off"
                     placeholder="Insira aqui uma tag"
                     {...register(`topics.${index}.topic`)}
