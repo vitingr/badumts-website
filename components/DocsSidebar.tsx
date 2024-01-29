@@ -10,15 +10,24 @@ import { HiPuzzlePiece } from "react-icons/hi2";
 import { LuCombine } from "react-icons/lu";
 import { FaHandPointUp } from "react-icons/fa";
 import { MdOutlineSupportAgent } from "react-icons/md";
-import { TbBrandNextjs, TbBrandPrisma   } from "react-icons/tb";
+import { TbBrandNextjs, TbBrandPrisma } from "react-icons/tb";
 import { BiLogoTypescript } from "react-icons/bi";
-import { SiNestjs, SiMongodb, SiTailwindcss, SiReact, SiOpenai, SiSwiper, SiRender, SiVercel } from "react-icons/si";
+import {
+  SiNestjs,
+  SiMongodb,
+  SiTailwindcss,
+  SiReact,
+  SiOpenai,
+  SiSwiper,
+  SiRender,
+  SiVercel,
+} from "react-icons/si";
 import { FaSass } from "react-icons/fa";
 import { BiLogoNodejs } from "react-icons/bi";
 
-const DocsSidebar = () => {
+const DocsSidebar = ({ showMenu }: { showMenu: boolean }) => {
   return (
-    <div className="f-full overflow-y-scroll w-full max-w-[350px] px-12">
+    <div className={`h-full overflow-y-scroll w-full max-w-[350px] px-12 sm:relative absolute bg-white ${showMenu ? "block" : "hidden" }`}>
       <ul className="list-none border-b border-[#D8DDE8] pb-4 mt-6">
         <h2 className="text-xl mb-2">Início</h2>
         <li className="flex gap-4 items-center transition-all duration-300 cursor-pointer py-1 px-2 rounded-xl hover:bg-[#F0F4F9]">
@@ -76,94 +85,55 @@ const DocsSidebar = () => {
       <ul className="list-none border-b border-[#D8DDE8] py-4 my-4">
         <h2 className="text-xl mb-2">Tecnologias</h2>
         <li className="flex gap-4 items-center transition-all duration-300 cursor-pointer py-1 px-2 rounded-xl hover:bg-[#F0F4F9]">
-          <TbBrandNextjs
-            className="gray-icon cursor-default"
-            size={14}
-          />
+          <TbBrandNextjs className="gray-icon cursor-default" size={14} />
           <p className="font-500 text-[#626B7F]">Nextjs</p>
         </li>
         <li className="flex gap-4 items-center transition-all duration-300 cursor-pointer py-1 px-2 rounded-xl hover:bg-[#F0F4F9]">
-          <SiNestjs
-            className="gray-icon cursor-default"
-            size={14}
-          />
+          <SiNestjs className="gray-icon cursor-default" size={14} />
           <p className="font-500 text-[#626B7F]">Nestjs</p>
         </li>
         <li className="flex gap-4 items-center transition-all duration-300 cursor-pointer py-1 px-2 rounded-xl hover:bg-[#F0F4F9]">
-          <BiLogoTypescript
-            className="gray-icon cursor-default"
-            size={14}
-          />
+          <BiLogoTypescript className="gray-icon cursor-default" size={14} />
           <p className="font-500 text-[#626B7F]">Typescript</p>
         </li>
         <li className="flex gap-4 items-center transition-all duration-300 cursor-pointer py-1 px-2 rounded-xl hover:bg-[#F0F4F9]">
-          <BiLogoNodejs
-            className="gray-icon cursor-default"
-            size={14}
-          />
+          <BiLogoNodejs className="gray-icon cursor-default" size={14} />
           <p className="font-500 text-[#626B7F]">Node</p>
         </li>
         <li className="flex gap-4 items-center transition-all duration-300 cursor-pointer py-1 px-2 rounded-xl hover:bg-[#F0F4F9]">
-          <SiReact
-            className="gray-icon cursor-default"
-            size={14}
-          />
+          <SiReact className="gray-icon cursor-default" size={14} />
           <p className="font-500 text-[#626B7F]">React</p>
         </li>
         <li className="flex gap-4 items-center transition-all duration-300 cursor-pointer py-1 px-2 rounded-xl hover:bg-[#F0F4F9]">
-          <SiTailwindcss
-            className="gray-icon cursor-default"
-            size={14}
-          />
+          <SiTailwindcss className="gray-icon cursor-default" size={14} />
           <p className="font-500 text-[#626B7F]">Tailwindcss</p>
         </li>
         <li className="flex gap-4 items-center transition-all duration-300 cursor-pointer py-1 px-2 rounded-xl hover:bg-[#F0F4F9]">
-          <FaSass
-            className="gray-icon cursor-default"
-            size={14}
-          />
+          <FaSass className="gray-icon cursor-default" size={14} />
           <p className="font-500 text-[#626B7F]">Sass</p>
         </li>
         <li className="flex gap-4 items-center transition-all duration-300 cursor-pointer py-1 px-2 rounded-xl hover:bg-[#F0F4F9]">
-          <TbBrandPrisma
-            className="gray-icon cursor-default"
-            size={14}
-          />
+          <TbBrandPrisma className="gray-icon cursor-default" size={14} />
           <p className="font-500 text-[#626B7F]">Prisma</p>
         </li>
         <li className="flex gap-4 items-center transition-all duration-300 cursor-pointer py-1 px-2 rounded-xl hover:bg-[#F0F4F9]">
-          <SiMongodb
-            className="gray-icon cursor-default"
-            size={14}
-          />
+          <SiMongodb className="gray-icon cursor-default" size={14} />
           <p className="font-500 text-[#626B7F]">MongoDB</p>
         </li>
         <li className="flex gap-4 items-center transition-all duration-300 cursor-pointer py-1 px-2 rounded-xl hover:bg-[#F0F4F9]">
-          <SiOpenai
-            className="gray-icon cursor-default"
-            size={14}
-          />
+          <SiOpenai className="gray-icon cursor-default" size={14} />
           <p className="font-500 text-[#626B7F]">OpenAI</p>
         </li>
         <li className="flex gap-4 items-center transition-all duration-300 cursor-pointer py-1 px-2 rounded-xl hover:bg-[#F0F4F9]">
-          <SiSwiper
-            className="gray-icon cursor-default"
-            size={14}
-          />
+          <SiSwiper className="gray-icon cursor-default" size={14} />
           <p className="font-500 text-[#626B7F]">Swiper</p>
         </li>
         <li className="flex gap-4 items-center transition-all duration-300 cursor-pointer py-1 px-2 rounded-xl hover:bg-[#F0F4F9]">
-          <SiRender
-            className="gray-icon cursor-default"
-            size={14}
-          />
+          <SiRender className="gray-icon cursor-default" size={14} />
           <p className="font-500 text-[#626B7F]">Render</p>
         </li>
         <li className="flex gap-4 items-center transition-all duration-300 cursor-pointer py-1 px-2 rounded-xl hover:bg-[#F0F4F9]">
-          <SiVercel
-            className="gray-icon cursor-default"
-            size={14}
-          />
+          <SiVercel className="gray-icon cursor-default" size={14} />
           <p className="font-500 text-[#626B7F]">Vercel</p>
         </li>
       </ul>

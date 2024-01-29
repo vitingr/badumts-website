@@ -120,15 +120,15 @@ const page = () => {
     postData &&
     postData.id !== "" && (
       <Suspense>
-        <div className='w-full flex justify-center sm:gap-12 mt-[125px] sm:mt-[50px] p-6 sm:p-[5%]'>
+        <div className='w-full flex justify-center sm:gap-12 mt-[125px] sm:mt-[50px] p-6 sm:p-[3%]'>
           <ToastMessage />
-          <section className="max-w-[950px] w-full px-6 border-x border-neutral-200">
+          <section className="max-w-[950px] w-full px-6 border-x border-slate-200">
             <h1 className="text-4xl font-bold">Postagem</h1>
             <h2 className="text-lg">
               Aqui você pode tirar uma dúvida em alguma postagem já realizada ou
               responder o usuário da postagem abaixo
             </h2>
-            <div className="mt-12 p-4 rounded-xl border border-neutral-200">
+            <div className="mt-12 p-4 rounded-xl border border-slate-200">
               <div className="flex justify-between gap-4">
                 <Image
                   alt="Profile Picture"
