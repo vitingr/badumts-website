@@ -12,14 +12,12 @@ const page = () => {
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  const apiKey = "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";
-
   const handleClick = async () => {
     setChats((prevChats) => [...prevChats, { text: query, creator: "user" }]);
 
     const openai = new OpenAIApi({
       organization: "org-Kb5gEsPmCrl1G5lAbrFXMdN9",
-      apiKey: apiKey,
+      apiKey: process.env.NEXT_PUBLIC_OPENAI_KEY_SECRET as string,
       dangerouslyAllowBrowser: true,
     });
 

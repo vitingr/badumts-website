@@ -185,7 +185,7 @@ const page = () => {
             {childPosts.length > 0 ? (
               <div className="mt-12">
                 {childPosts.map((post: PostProps, index: number) => (
-                  <Post content={post} key={index} showAnswerButton={false} />
+                  <Post refetch={getPostData} content={post} key={index} showAnswerButton={false} />
                 ))}
               </div>
             ) : (
