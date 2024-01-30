@@ -29,7 +29,7 @@ export const UserProvider = ({ children }: { children: React.ReactNode }) => {
   async function getUserInfo() {
     try {
       const requisition = await fetch(
-        `http://localhost:3030/user/${session.id}`,
+        `https://badumts.onrender.com/user/${session.id}`,
         {
           method: "GET",
           headers: {
