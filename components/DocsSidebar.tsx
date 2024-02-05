@@ -27,7 +27,7 @@ import { BiLogoNodejs } from "react-icons/bi";
 
 const DocsSidebar = ({ showMenu }: { showMenu: boolean }) => {
   return (
-    <div className={`h-full overflow-y-scroll w-full max-w-[350px] px-12 sm:relative absolute bg-white ${showMenu ? "block" : "hidden" }`}>
+    <div className={`h-full overflow-y-scroll w-full max-w-[350px] px-12 sm:relative absolute bg-white ${!showMenu ? "block" : "hidden" }`}>
       <ul className="list-none border-b border-[#D8DDE8] pb-4 mt-6">
         <h2 className="text-xl mb-2">Início</h2>
         <li className="flex gap-4 items-center transition-all duration-300 cursor-pointer py-1 px-2 rounded-xl hover:bg-[#F0F4F9]">

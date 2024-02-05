@@ -54,7 +54,7 @@ const page = () => {
           <h1 className="text-4xl font-bold w-full">Top Questions</h1>
           <Link
             href={"/blog/create-post"}
-            className="bg-blue-400 text-white rounded-xl h-[40px] cursor-pointer w-[150px] p-2 flex items-center justify-center transition-all duration-300 hover:bg-blue-500 mt-4 sm:mt-0"
+            className="bg-blue-900 text-white rounded-xl h-[40px] cursor-pointer w-[150px] p-2 flex items-center justify-center transition-all duration-300 hover:bg-blue-800 mt-4 sm:mt-0"
           >
             Publicar
           </Link>

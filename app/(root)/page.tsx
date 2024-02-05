@@ -1,12 +1,30 @@
+"use client"
+
 import Person from "@/components/Person";
 import { group_members } from "@/constants/group";
 import { PersonProps } from "@/types";
 import Image from "next/image";
+import { motion } from "framer-motion"
+import { slideInFromTop } from "@/utils/common/motion";
+import { useInView } from 'react-intersection-observer'
+import Highlight from "@/components/Highlight";
 
 export default function Home() {
+
+  const { ref, inView } = useInView({
+    triggerOnce: true
+  })
+
+  const imageVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 }
+  }
+
+  const animationDelay = 0
+
   return (
-    <div className="w-full flex flex-col items-center p-6 sm:p-[5%]">
-      <section className="w-full flex justify-between sm:flex-nowrap flex-wrap gap-12 max-w-[1250px] p-6 sm:p-10">
+    <motion.div initial="hidden" animate="visible" className="w-full flex flex-col items-center p-6 sm:p-[5%]">
+      <motion.section variants={slideInFromTop()} className="w-full flex justify-between sm:flex-nowrap flex-wrap gap-12 max-w-[1250px] p-6 sm:p-10">
         <div className="w-full">
           <div className="flex flex-col">
             <h1 className="font sm:text-[72px] text-5xl sm:text-6xl cursor-default">
@@ -30,7 +48,7 @@ export default function Home() {
                   width={25}
                   height={25}
                 />
-                <p className="sm:text-base text-sm">Getulio games joga demais man</p>
+                <p className="sm:text-base text-sm">Colocar algo nesse campo aqui</p>
               </li>
               <li className="list-none flex gap-2 items-center">
                 <Image
@@ -39,7 +57,7 @@ export default function Home() {
                   width={25}
                   height={25}
                 />
-                <p className="sm:text-base text-sm">Getulio games joga demais man</p>
+                <p className="sm:text-base text-sm">Colocar algo nesse campo aqui</p>
               </li>
             </div>
             <div className="flex gap-6 mt-3">
@@ -50,25 +68,25 @@ export default function Home() {
                   width={25}
                   height={25}
                 />
-                <p className="sm:text-base text-sm">Getulio games joga demais man</p>
+                <p className="sm:text-base text-sm">Colocar algo nesse campo aqui</p>
               </li>
-              <li className="list-none flex gap-2 items-center">
+              <li className="list-none flex gap-2 items-center">   
                 <Image
                   alt="Icon"
                   src={"/assets/correct.svg"}
                   width={25}
                   height={25}
                 />
-                <p className="sm:text-base text-sm">Getulio games joga demais man</p>
+                <p className="sm:text-base text-sm">Colocar algo nesse campo aqui</p>
               </li>
             </div>
           </div>
 
           <div className="flex gap-6 items-center max-w-[450px] w-full mt-14">
-            <div className="bg-blue-400 text-white rounded-lg text-center py-2 px-4 cursor-pointer text-lg transition-all duration-300 hover:bg-blue-500 w-full">
+            <div className="bg-blue-600 text-white rounded-lg text-center py-2 px-4 cursor-pointer text-lg transition-all duration-300 hover:bg-blue-500 w-full">
               See our Features
             </div>
-            <div className="text-blue-400 cursor-pointer text-lg transition-all duration-300 hover:text-blue-500 w-full">
+            <div className="text-blue-600 cursor-pointer text-lg transition-all duration-300 hover:text-blue-500 w-full">
               See more
             </div>
           </div>
@@ -81,7 +99,7 @@ export default function Home() {
             height={300}
           />
         </div>
-      </section>
+      </motion.section>
 
       <h1 className="mt-[5.2em] mb-20 w-full text-center font-[500] text-5xl cursor-default p-6">
         Eai, {" "}
@@ -96,7 +114,7 @@ export default function Home() {
         por aí?
       </h1>
 
-      <section className="mt-[250px] flex gap-12 justify-between sm:flex-nowrap flex-wrap w-full max-w-[1250px] p-6 sm:p-10">
+      <motion.section variants={slideInFromTop()} className="mt-[150px] flex gap-12 justify-between sm:flex-nowrap flex-wrap w-full max-w-[1250px] p-6 sm:p-10">
         <div className="w-full">//imagem do produto</div>
         <div className="w-full">
           <h1 className="text-4xl font-bold">Nosso Projeto</h1>
@@ -108,18 +126,22 @@ export default function Home() {
           </p>
 
           <div className="flex gap-2 items-center text-lg text-[#626B7F] mt-10">
-            <pre className="text-blue-400">#badumts</pre>
-            <pre className="text-blue-400">#façabarulho</pre>
-            <pre className="text-blue-400">#musica</pre>
+            <pre className="text-blue-600">#badumts</pre>
+            <pre className="text-blue-600">#façabarulho</pre>
+            <pre className="text-blue-600">#musica</pre>
           </div>
 
-          <div className="mt-10 w-full bg-blue-400 text-white py-3 text-center rounded-xl">
+          <div className="mt-10 w-full bg-blue-600 text-white py-3 text-center rounded-xl transition-all duration-300 hover:bg-blue-500 cursor-pointer">
             Quero saber mais
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="w-full bg-blue-400 mt-[250px] p-20 flex flex-col items-center">
+      <motion.section variants={slideInFromTop()} className="w-full mt-[150px] p-6 sm:p-10 flex justify-center items-center gap-12">
+        <Highlight />
+      </motion.section>
+
+      <motion.section variants={slideInFromTop()} className="w-full bg-blue-400 mt-[250px] p-20 flex flex-col items-center rounded-md">
         <h1 className="text-center text-4xl text-white font-bold cursor-default">
           Downloads
         </h1>
@@ -191,18 +213,18 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="mt-[175px] max-w-[1250px] mb-[250px] p-6 sm:p-10">
+      <motion.section ref={ref} initial="hidden" variants={imageVariants} animate={inView ? "visible" : "hidden"} transition={{ delay: animationDelay }} className="mt-[175px] max-w-[1250px] mb-[250px] p-6 sm:p-10">
         <h1 className="text-center text-4xl font-bold cursor-default">
           Quem Somos?
         </h1>
         <div className="flex flex-wrap w-full gap-12 mt-20 justify-center">
           {group_members.map((person: PersonProps, index: number) => (
-            <Person personData={person} />
+            <Person personData={person} index={index} key={index} />
           ))}
         </div>
-      </section>
-    </div>
+      </motion.section>
+    </motion.div>
   );
 }
