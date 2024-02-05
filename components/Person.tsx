@@ -1,12 +1,16 @@
+"use client"
+
 import { PersonProps } from "@/types";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import {motion} from 'framer-motion'
+import { slideInFromTop } from "@/utils/common/motion";
 
-const Person = ({ personData }: { personData: PersonProps }) => {
+const Person = ({ personData, index }: { personData: PersonProps, index: number }) => {
   return (
-    <div className="w-[300px] min-h-[385px] p-6 border border-neutral-200 rounded-xl bg-[#ffffff56]">
+    <motion.div initial="hidden" animate="visible" variants={slideInFromTop(index * 0.35)} className="w-[300px] min-h-[385px] p-6 border border-neutral-200 rounded-xl bg-[#ffffff56]">
       <div className="w-full flex justify-center items-center">
         <Image
           alt="Group Member Photo"
@@ -47,7 +51,7 @@ const Person = ({ personData }: { personData: PersonProps }) => {
           />
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

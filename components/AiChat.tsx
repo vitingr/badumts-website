@@ -37,7 +37,7 @@ const AiChat = ({ chat }: { chat: AiChatProps }) => {
       />
       {chat && chat.text && (
         <p className="text-justify text-[#626B7F]">
-          <span className="font-bold mr-2">Você:</span>
+          <span className="font-bold mr-2">Você: </span>
           {chat.text}
         </p>
       )}

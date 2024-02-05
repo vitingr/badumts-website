@@ -190,7 +190,7 @@ const page = () => {
               </div>
               <div className="w-full flex justify-end items-center">
                 <div
-                  className="bg-blue-400 text-white text-center cursor-pointer rounded-xl p-2 transition-all duration-300 hover:bg-blue-500"
+                  className="bg-blue-900 text-white text-center cursor-pointer rounded-xl p-2 transition-all duration-300 hover:bg-blue-800"
                   onClick={() => addNewTag()}
                 >
                   Adicionar
@@ -221,7 +221,7 @@ const page = () => {
 
           <button
             type="submit"
-            className="w-full bg-blue-500 px-4 py-3 text-white transition-all duration-300 hover:bg-blue-600 cursor-pointer mt-12 rounded-xl"
+            className="w-full bg-blue-900 px-4 py-3 text-white transition-all duration-300 hover:bg-blue-800 cursor-pointer mt-12 rounded-xl"
           >
             Publicar Postagem
           </button>

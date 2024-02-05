@@ -209,7 +209,7 @@ const page = () => {
                 }}
               >
                 <TextEditor value={content} setValue={setContent} />
-                <button className="w-full bg-blue-400 text-white px-4 py-2 mt-8 text-center cursor-pointer rounded-xl transition-all duration-300 hover:bg-blue-500">
+                <button className="w-full bg-blue-900 text-white px-4 py-2 mt-8 text-center cursor-pointer rounded-xl transition-all duration-300 hover:bg-blue-800">
                   Publicar
                 </button>
               </form>

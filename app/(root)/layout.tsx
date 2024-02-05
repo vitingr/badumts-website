@@ -41,7 +41,7 @@ export default function RootLayout({
                     </div>
                     <div className="z-10 relative">
                       <Navbar />
-                      <main className="min-h-[82vh] w-full sm:pt-[150px] pt-[125px] flex flex-col items-center">
+                      <main className="min-h-[86vh] w-full sm:pt-[150px] pt-[125px] flex flex-col items-center">
                         {children}
                       </main>
                       <Footer />

@@ -16,39 +16,39 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
 
   return (
-    <header className="fixed bg-white w-full flex justify-center p-6 z-50 border-b border-[#D8DDE8]">
+    <header className="fixed bg-blue-900 w-full flex justify-center p-4 z-50 border-b border-[#D8DDE8]">
       <nav className="max-w-[1950px] bg-transparent w-full flex sm:justify-between sm:gap-12">
-        <h1 className="sm:w-full flex justify-left sm:justify-center items-center text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-sky-500 cursor-default">
+        <h1 className="sm:w-full flex justify-left sm:justify-center items-center text-3xl font-bold text-white uppercase cursor-default">
           Badumts
         </h1>
         <ul className="list-none hidden sm:flex justify-center w-full gap-10 items-center">
           <Link
             href={"/"}
-            className="text-lg text-[#626B7F] transition-all duration-300 hover:text-[#3e3e3e] px-4 py-1 rounded-xl hover:bg-[#f8f8f8]"
+            className="text-lg text-white px-4 py-1 rounded-xl"
           >
             Home
           </Link>
           <Link
             href={"/guide"}
-            className="text-lg text-[#626B7F] transition-all duration-300 hover:text-[#3e3e3e] px-4 py-1 rounded-xl hover:bg-[#f8f8f8]"
+            className="text-lg text-white px-4 py-1 rounded-xl"
           >
             Guide
           </Link>
           <Link
             href={"/support"}
-            className="text-lg text-[#626B7F] transition-all duration-300 hover:text-[#3e3e3e] px-4 py-1 rounded-xl hover:bg-[#f8f8f8]"
+            className="text-lg text-white px-4 py-1 rounded-xl"
           >
             Support
           </Link>
           <Link
             href={"/blog"}
-            className="text-lg text-[#626B7F] transition-all duration-300 hover:text-[#3e3e3e] px-4 py-1 rounded-xl hover:bg-[#f8f8f8]"
+            className="text-lg text-white px-4 py-1 rounded-xl"
           >
             Blog
           </Link>
           <Link
             href={"/documentation"}
-            className="text-lg text-[#626B7F] transition-all duration-300 hover:text-[#3e3e3e] px-4 py-1 rounded-xl hover:bg-[#f8f8f8]"
+            className="text-lg text-white px-4 py-1 rounded-xl"
           >
             Documentation
           </Link>
@@ -57,13 +57,13 @@ const Navbar = () => {
           <UserButton afterSignOutUrl="/" />
           <IoMenuOutline
             size={30}
-            className="cursor-pointer gray-icon"
+            className="cursor-pointer white-icon"
             onClick={() => setShowMenu(!showMenu)}
           />
         </div>
 
         {showMenu && (
-          <div className="z-20 fixed right-0 bg-[#fff] shadow-md h-[605px] sm:h-[650px] w-[350px] border border-[#f7f7f7] translate-y-2 transition-all rounded-lg sm:mt-[25px] mt-[25px] lg:left-[64%]">
+          <div className="z-20 fixed right-0 bg-[#fff] shadow-md h-[605px] sm:h-[600px] w-[350px] border border-[#f7f7f7] translate-y-2 transition-all rounded-lg sm:mt-[25px] mt-[25px] lg:left-[64%]">
             <div className="px-10 py-6">
               <h1 className="text-3xl font-bold text-center">
                 Bem-Vindo ao Badumts
@@ -77,7 +77,7 @@ const Navbar = () => {
               />
               <div>
                 <h4 className="text-sm font-bold">Utilize nossa IA de Suporte!</h4>
-                <p className="text-sm text-[#626B7F]">
+                <p className="text-sm">
                   Precisa de ajuda? experimente o nosso novo recurso, a IA Getúlio! Ela sempre estará disponível para te ajudar.
                 </p>
                 <Link href={"/support"} className="mt-6 text-blue-400 font-bold text-sm">
@@ -93,7 +93,7 @@ const Navbar = () => {
                 onClick={() => setShowMenu(false)}
               >
                 <IoHomeOutline size={27.5} className="gray-icon" />
-                <h3 className="text-[#626B7F] w-full text-lg">Início</h3>
+                <h3 className="w-full text-lg">Início</h3>
               </Link>
               <Link
                 href={"/guide"}
@@ -102,7 +102,7 @@ const Navbar = () => {
                 onClick={() => setShowMenu(false)}
               >
                 <IoNewspaperOutline size={27.5} className="gray-icon" />
-                <h3 className="text-[#626B7F] w-full text-lg">Guia</h3>
+                <h3 className="w-full text-lg">Guia</h3>
               </Link>
               <Link
                 href={"/support"}
@@ -111,7 +111,7 @@ const Navbar = () => {
                 onClick={() => setShowMenu(false)}
               >
                 <MdOutlineSupportAgent size={27.5} className="gray-icon" />
-                <h3 className="text-[#626B7F] w-full text-lg">Suporte</h3>
+                <h3 className="w-full text-lg">Suporte</h3>
               </Link>
               <Link
                 href={"/blog"}
@@ -123,7 +123,7 @@ const Navbar = () => {
                   size={27.5}
                   className="gray-icon"
                 />
-                <h3 className="text-[#626B7F] w-full text-lg">Blog</h3>
+                <h3 className="w-full text-lg">Blog</h3>
               </Link>
               <Link
                 href={"/documentation"}
@@ -132,7 +132,7 @@ const Navbar = () => {
                 onClick={() => setShowMenu(false)}
               >
                 <IoDocumentsOutline size={27.5} className="gray-icon" />
-                <h3 className="text-[#626B7F] w-full text-lg">Documentação</h3>
+                <h3 className="w-full text-lg">Documentação</h3>
               </Link>
             </div>
           </div>
