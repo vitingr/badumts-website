@@ -57,3 +57,10 @@ export interface PopupProps {
   showState?: any;
   handleSubmit?: () => void;
 }
+
+export interface HighlighProps {
+  title: string;
+  text: string;
+  link: string;
+  image: string;
+}

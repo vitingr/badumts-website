@@ -16,7 +16,7 @@ export const group_members = [
     description:
       "Professional with 8+ years of experience helping brands reach their goals",
     techs: ["html", "css", "javascript"],
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/jo%C3%A3o-paulo-oliveira-1a08b724a/",
     github: "",
   },
   {
@@ -26,7 +26,7 @@ export const group_members = [
     description:
       "Professional with 8+ years of experience helping brands reach their goals",
     techs: ["html", "css", "javascript"],
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/nivaldo-ferrari-junior-01a29022b/",
     github: "",
   },
   {
@@ -41,7 +41,7 @@ export const group_members = [
   },
   {
     name: "Vitor Gabriel Silva",
-    photo: "/assets/vitor.png",
+    photo: "/assets/vitor.jpg",
     email: "vitor.silva952@etec.sp.gov.br",
     description:
       "Professional with 8+ years of experience helping brands reach their goals",
@@ -53,7 +53,7 @@ export const group_members = [
       "python",
       "graphql",
       "svelte",
-      "javascript",
+      "nuxtjs",
     ],
     linkedin: "https://www.linkedin.com/in/vitor-gabriel-0ab38a261/",
     github: "https://github.com/vitingr",
