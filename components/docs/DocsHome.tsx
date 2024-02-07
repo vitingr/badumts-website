@@ -41,8 +41,9 @@ const DocsHome = () => {
             <div className="w-full">
               <h1 className="mt-4 text-xl">Quickstarts & Tutorials</h1>
               <p className="text-[#626B7F] text-sm mt-4">
-                Explore our end-to-end tutorials and getting started guides for
-                different application stacks using Clerk.{" "}
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+                temporibus explicabo doloribus officiis itaque, tempora magni
+                consectetur quibusdam.
               </p>
             </div>
           </div>
@@ -51,10 +52,11 @@ const DocsHome = () => {
               <HiSparkles size={25} className="cursor-pointer docs-icon" />
             </div>
             <div className="w-full">
-              <h1 className="mt-4 text-xl">UI Components</h1>
+              <h1 className="mt-4 text-xl">Integration</h1>
               <p className="text-[#626B7F] text-sm mt-4">
-                Clerk's pre-built UI components give you a beautiful,
-                fully-functional user management experience in minutes.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+                temporibus explicabo doloribus officiis itaque, tempora magni
+                consectetur quibusdam officiis itaque, tempora magni.
               </p>
             </div>
           </div>
@@ -65,9 +67,9 @@ const DocsHome = () => {
             <div className="w-full">
               <h1 className="mt-4 text-xl">API Reference</h1>
               <p className="text-[#626B7F] text-sm mt-4">
-                Dig into our API reference documentation and SDKs. We have
-                everything you need to get started setting up authentication
-                with Clerk.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+                temporibus explicabo doloribus officiis itaque, tempora magni
+                consectetur quibusdam officiis itaque, tempora magni.
               </p>
             </div>
           </div>
@@ -76,11 +78,11 @@ const DocsHome = () => {
               <HiLockClosed size={25} className="cursor-pointer docs-icon" />
             </div>
             <div className="w-full">
-              <h1 className="mt-4 text-xl">Security</h1>
+              <h1 className="mt-4 text-xl">Badumts Security</h1>
               <p className="text-[#626B7F] text-sm mt-4">
-                Account security is the top concern of every feature we build.
-                This documentation lists some of the many protections included
-                with Clerk.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+                temporibus explicabo doloribus officiis itaque, tempora magni
+                consectetur quibusdam.
               </p>
             </div>
           </div>

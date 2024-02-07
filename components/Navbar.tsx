@@ -22,10 +22,7 @@ const Navbar = () => {
           Badumts
         </h1>
         <ul className="list-none hidden sm:flex justify-center w-full gap-10 items-center">
-          <Link
-            href={"/"}
-            className="text-lg text-white px-4 py-1 rounded-xl"
-          >
+          <Link href={"/"} className="text-lg text-white px-4 py-1 rounded-xl">
             Home
           </Link>
           <Link
@@ -76,11 +73,17 @@ const Navbar = () => {
                 alt="Cellphone Image"
               />
               <div>
-                <h4 className="text-sm font-bold">Utilize nossa IA de Suporte!</h4>
+                <h4 className="text-sm font-bold">
+                  Utilize nossa IA de Suporte!
+                </h4>
                 <p className="text-sm">
-                  Precisa de ajuda? experimente o nosso novo recurso, a IA Getúlio! Ela sempre estará disponível para te ajudar.
+                  Precisa de ajuda? experimente o nosso novo recurso, a IA
+                  Getúlio! Ela sempre estará disponível para te ajudar.
                 </p>
-                <Link href={"/support"} className="mt-6 text-blue-400 font-bold text-sm">
+                <Link
+                  href={"/support"}
+                  className="mt-6 text-blue-400 font-bold text-sm"
+                >
                   Beleza
                 </Link>
               </div>

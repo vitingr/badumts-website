@@ -1,21 +1,20 @@
 export const HIGHLIGHTS = [
   {
     title: "Tecnologia",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nemo necessitatibus tempora aspernatur sit itaque sunt corrupti impedit nihil fugit totam fuga quia culpa excepturi reiciendis est, recusandae odio consequatur?",
+    text: "Descubra o futuro do entretenimento musical com nosso dispositivo de última geração. Equipado com tecnologia de ponta, oferecemos uma experiência sonora imersiva e recursos intuitivos que transformam a maneira como você vive a música.",
     link: "/",
-    image: "",
+    image: "/assets/technology.svg",
   },
   {
     title: "Inovação",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nemo necessitatibus tempora aspernatur sit itaque sunt corrupti impedit nihil fugit totam fuga quia culpa excepturi reiciendis est, recusandae odio consequatur?",
+    text: "Revolucionando a forma como você experimenta música, nosso dispositivo é a verdadeira definição de inovação. Desde design elegante até recursos inteligentes, cada detalhe foi cuidadosamente projetado para proporcionar uma experiência única.",
     link: "/",
-    image: "",
+    image: "/assets/inovation.svg",
   },
   {
-    title: "Criatividade",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nemo necessitatibus tempora aspernatur sit itaque sunt corrupti impedit nihil fugit totam fuga quia culpa excepturi reiciendis est, recusandae odio consequatur?",
+    title: "Oportunidades",
+    text: "Abra as portas para oportunidades ilimitadas com nosso dispositivo de música. Seja você um entusiasta musical, um criador de conteúdo ou um profissional da indústria, nosso dispositivo oferece um campo vasto para explorar e prosperar.",
     link: "/",
-    image: "",
+    image: "/assets/oportunity.svg",
   },
 ];
-
