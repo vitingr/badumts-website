@@ -16,8 +16,8 @@ const page = () => {
     setChats((prevChats) => [...prevChats, { text: query, creator: "user" }]);
 
     const openai = new OpenAIApi({
-      organization: "org-Kb5gEsPmCrl1G5lAbrFXMdN9",
-      apiKey: "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",
+      organization: "org-D2zAYJcb4gehqE0WI6aeo2Si",
+      apiKey: process.env.NEXT_PUBLIC_OPENAI_KEY!,
       dangerouslyAllowBrowser: true,
     });
 
