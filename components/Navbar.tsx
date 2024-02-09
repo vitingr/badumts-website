@@ -22,30 +22,33 @@ const Navbar = () => {
           Badumts
         </h1>
         <ul className="list-none hidden sm:flex justify-center w-full gap-10 items-center">
-          <Link href={"/"} className="text-lg text-white px-4 py-1 rounded-xl">
+          <Link
+            href={"/"}
+            className="text-base text-white px-4 py-1 rounded-xl"
+          >
             Home
           </Link>
           <Link
             href={"/guide"}
-            className="text-lg text-white px-4 py-1 rounded-xl"
+            className="text-base text-white px-4 py-1 rounded-xl"
           >
             Guide
           </Link>
           <Link
             href={"/support"}
-            className="text-lg text-white px-4 py-1 rounded-xl"
+            className="text-base text-white px-4 py-1 rounded-xl"
           >
             Support
           </Link>
           <Link
             href={"/blog"}
-            className="text-lg text-white px-4 py-1 rounded-xl"
+            className="text-base text-white px-4 py-1 rounded-xl"
           >
             Blog
           </Link>
           <Link
             href={"/documentation"}
-            className="text-lg text-white px-4 py-1 rounded-xl"
+            className="text-base text-white px-4 py-1 rounded-xl"
           >
             Documentation
           </Link>

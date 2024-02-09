@@ -30,7 +30,7 @@ const AiChat = ({ chat }: { chat: AiChatProps }) => {
     <div className="mt-6 w-full flex gap-2 py-6 border-b border-neutral-100">
       <Image
         alt="Getulio image"
-        src={user.photo}
+        src={user?.photo || "/assets/undefined-user.png"}
         width={35}
         height={35}
         className="rounded-full w-[35px] h-[35px]"
