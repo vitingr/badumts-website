@@ -17,7 +17,7 @@ const page = () => {
 
     const openai = new OpenAIApi({
       organization: "org-D2zAYJcb4gehqE0WI6aeo2Si",
-      apiKey: "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",
+      apiKey: "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",
       dangerouslyAllowBrowser: true,
     });
 
