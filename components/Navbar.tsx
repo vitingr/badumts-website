@@ -18,37 +18,37 @@ const Navbar = () => {
   return (
     <header className="fixed bg-blue-900 w-full flex justify-center p-4 z-50 border-b border-[#D8DDE8]">
       <nav className="max-w-[1950px] bg-transparent w-full flex sm:justify-between sm:gap-12">
-        <h1 className="sm:w-full flex justify-left sm:justify-center items-center text-3xl font-bold text-white uppercase cursor-default">
+        <h1 className="sm:w-full flex justify-left sm:justify-center items-center text-2xl font-bold text-white uppercase cursor-default">
           Badumts
         </h1>
         <ul className="list-none hidden sm:flex justify-center w-full gap-10 items-center">
           <Link
             href={"/"}
-            className="text-base text-white px-4 py-1 rounded-xl"
+            className="text-sm text-white px-4 py-1 rounded-xl"
           >
             Home
           </Link>
           <Link
             href={"/guide"}
-            className="text-base text-white px-4 py-1 rounded-xl"
+            className="text-sm text-white px-4 py-1 rounded-xl"
           >
             Guide
           </Link>
           <Link
             href={"/support"}
-            className="text-base text-white px-4 py-1 rounded-xl"
+            className="text-sm text-white px-4 py-1 rounded-xl"
           >
             Support
           </Link>
           <Link
             href={"/blog"}
-            className="text-base text-white px-4 py-1 rounded-xl"
+            className="text-sm text-white px-4 py-1 rounded-xl"
           >
             Blog
           </Link>
           <Link
             href={"/documentation"}
-            className="text-base text-white px-4 py-1 rounded-xl"
+            className="text-sm text-white px-4 py-1 rounded-xl"
           >
             Documentation
           </Link>

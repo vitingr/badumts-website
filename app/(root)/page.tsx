@@ -166,12 +166,16 @@ export default function Home() {
 
       <motion.section
         variants={slideInFromTop()}
-        className="w-full bg-blue-400 mt-[250px] p-20 flex flex-col items-center rounded-md"
+        className="w-full bg-blue-900 mt-[250px] p-20 flex flex-col items-center rounded-md"
       >
-        <h1 className="text-center text-4xl text-white font-bold cursor-default">
-          Downloads
+        <h1 className="text-center text-4xl text-blue-300 font-bold cursor-default">
+          Downloads e Arquivos
         </h1>
-        <h2 className="text-white text-lg text-center">
+        <h2 className="text-white text-4xl text-center font-bold">
+          Baixe aqui tudo que você precisa
+        </h2>
+
+        <h2 className="text-white text-base mt-10 text-center font-light">
           Nessa seção você terá acesso a tudo que é necessário para usufruir do
           nosso produto
         </h2>
@@ -188,19 +192,19 @@ export default function Home() {
                 <path d="M14.29,17.29,13,18.59V13a1,1,0,0,0-2,0v5.59l-1.29-1.3a1,1,0,0,0-1.42,1.42l3,3a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l3-3a1,1,0,0,0-1.42-1.42ZM18.42,6.22A7,7,0,0,0,5.06,8.11,4,4,0,0,0,6,16a1,1,0,0,0,0-2,2,2,0,0,1,0-4A1,1,0,0,0,7,9a5,5,0,0,1,9.73-1.61,1,1,0,0,0,.78.67,3,3,0,0,1,.24,5.84,1,1,0,1,0,.5,1.94,5,5,0,0,0,.17-9.62Z"></path>
               </svg>
             </button>
-            <h2 className="text-white text-3xl font-bold text-center">Peças</h2>
+            <h2 className="text-white text-3xl font-bold text-center my-2">Peças</h2>
             <h3 className="mb-12 text-center text-white">
               Clique no botão acima para baixar o material relacionado ao
               respectivo tópico informado
             </h3>
 
-            <div className="w-full border-b border-white py-2 p-4">
-              <span className="text-zinc-200 text-center">tamanho: 16mb</span>
+            <div className="w-full border-b border-[#ffffff93] py-4 p-4">
+              <span className="text-zinc-300 text-center">tamanho: 16mb</span>
               <h3 className="text-lg text-white">Catálogo de peças PVC</h3>
             </div>
 
-            <div className="w-full border-b border-white py-2 p-4">
-              <span className="text-zinc-200 text-center">tamanho: 4mb</span>
+            <div className="w-full border-b border-[#ffffff93] py-4 p-4">
+              <span className="text-zinc-300 text-center">tamanho: 4mb</span>
               <h3 className="text-lg text-white">Quantitativo em tabela</h3>
             </div>
           </div>
@@ -215,7 +219,7 @@ export default function Home() {
                 <path d="M14.29,17.29,13,18.59V13a1,1,0,0,0-2,0v5.59l-1.29-1.3a1,1,0,0,0-1.42,1.42l3,3a1,1,0,0,0,.33.21.94.94,0,0,0,.76,0,1,1,0,0,0,.33-.21l3-3a1,1,0,0,0-1.42-1.42ZM18.42,6.22A7,7,0,0,0,5.06,8.11,4,4,0,0,0,6,16a1,1,0,0,0,0-2,2,2,0,0,1,0-4A1,1,0,0,0,7,9a5,5,0,0,1,9.73-1.61,1,1,0,0,0,.78.67,3,3,0,0,1,.24,5.84,1,1,0,1,0,.5,1.94,5,5,0,0,0,.17-9.62Z"></path>
               </svg>
             </button>
-            <h2 className="text-white text-3xl font-bold text-center">
+            <h2 className="text-white text-3xl font-bold text-center my-2">
               Manual
             </h2>
             <h3 className="mb-12 text-center text-white">
@@ -223,18 +227,18 @@ export default function Home() {
               respectivo tópico informado
             </h3>
 
-            <div className="w-full border-b border-white py-2 p-4">
-              <span className="text-zinc-200 text-center">tamanho: 24mb</span>
+            <div className="w-full border-b border-[#ffffff93fff93] py-4 p-4">
+              <span className="text-zinc-300 text-center">tamanho: 24mb</span>
               <h3 className="text-lg text-white">Manual de instalação</h3>
             </div>
 
-            <div className="w-full border-b border-white py-2 p-4">
-              <span className="text-zinc-200 text-center">tamanho: 26mb</span>
+            <div className="w-full border-b border-[#ffffff93] py-4 p-4">
+              <span className="text-zinc-300 text-center">tamanho: 26mb</span>
               <h3 className="text-lg text-white">Manual de montagem</h3>
             </div>
 
-            <div className="w-full border-b border-white py-2 p-4">
-              <span className="text-zinc-200 text-center">tamanho: 30mb</span>
+            <div className="w-full border-b border-[#ffffff93] py-4 p-4">
+              <span className="text-zinc-300 text-center">tamanho: 30mb</span>
               <h3 className="text-lg text-white">Configuração do Arduino</h3>
             </div>
           </div>
