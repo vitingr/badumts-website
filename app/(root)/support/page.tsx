@@ -17,7 +17,7 @@ const page = () => {
 
     const openai = new OpenAIApi({
       organization: "org-D2zAYJcb4gehqE0WI6aeo2Si",
-      apiKey: process.env.NEXT_PUBLIC_OPENAI_KEY_SECRET,
+      apiKey: process.env.OPENAI_API_KEY,
       dangerouslyAllowBrowser: true,
     });
 
