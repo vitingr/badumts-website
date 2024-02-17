@@ -17,7 +17,7 @@ const page = () => {
 
     const openai = new OpenAIApi({
       organization: "org-D2zAYJcb4gehqE0WI6aeo2Si",
-      apiKey: "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",
+      apiKey: process.env.NEXT_PUBLIC_OPENAI_KEY_SECRET,
       dangerouslyAllowBrowser: true,
     });
 
@@ -86,7 +86,7 @@ const page = () => {
         {chats.length > 0 ? (
           <>
             {chats.map((chat: any, index: number) => (
-              <AiChat chat={chat} />
+              <AiChat chat={chat} key={index} />
             ))}
           </>
         ) : (
