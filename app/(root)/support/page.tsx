@@ -64,7 +64,7 @@ const page = () => {
               setIsLoading(true);
               handleClick();
             }}
-            className="bg-blue-500 text-white rounded-xl py-1 px-3 cursor-pointer"
+            className="bg-blue-800 text-white rounded-xl py-1 px-4 text-sm cursor-pointer"
           >
             Enviar
           </button>
@@ -90,7 +90,7 @@ const page = () => {
             ))}
           </>
         ) : (
-          <p className="w-full text-center text-lg text-[#626B7F] mt-16">
+          <p className="w-full text-center text-lg text-[#626B7F] h-full flex items-center justify-center">
             Você ainda não possui nenhuma conversa com Getúlio, que tal iniciar
             uma?
           </p>

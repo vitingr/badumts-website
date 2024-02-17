@@ -18,37 +18,37 @@ const Navbar = () => {
   return (
     <header className="fixed bg-blue-900 w-full flex justify-center p-4 z-50 border-b border-[#D8DDE8]">
       <nav className="max-w-[1950px] bg-transparent w-full flex sm:justify-between sm:gap-12">
-        <h1 className="sm:w-full flex justify-left sm:justify-center items-center text-2xl font-bold text-white uppercase cursor-default">
+        <h1 className="sm:w-full flex justify-left tracking-widest sm:justify-center items-center text-2xl font-extrabold text-white uppercase cursor-default">
           Badumts
         </h1>
         <ul className="list-none hidden sm:flex justify-center w-full gap-10 items-center">
           <Link
             href={"/"}
-            className="text-sm text-white px-4 py-1 rounded-xl"
+            className="tracking-widest text-sm text-white px-4 py-1 rounded-xl transition-all duration-300 hover:text-blue-50 hover:bg-blue-800"
           >
             Home
           </Link>
           <Link
             href={"/guide"}
-            className="text-sm text-white px-4 py-1 rounded-xl"
+            className="tracking-widest text-sm text-white px-4 py-1 rounded-xl transition-all duration-300 hover:text-blue-50 hover:bg-blue-800"
           >
             Guide
           </Link>
           <Link
             href={"/support"}
-            className="text-sm text-white px-4 py-1 rounded-xl"
+            className="tracking-widest text-sm text-white px-4 py-1 rounded-xl transition-all duration-300 hover:text-blue-50 hover:bg-blue-800"
           >
             Support
           </Link>
           <Link
             href={"/blog"}
-            className="text-sm text-white px-4 py-1 rounded-xl"
+            className="tracking-widest text-sm text-white px-4 py-1 rounded-xl transition-all duration-300 hover:text-blue-50 hover:bg-blue-800"
           >
             Blog
           </Link>
           <Link
             href={"/documentation"}
-            className="text-sm text-white px-4 py-1 rounded-xl"
+            className="tracking-widest text-sm text-white px-4 py-1 rounded-xl transition-all duration-300 hover:text-blue-50 hover:bg-blue-800"
           >
             Documentation
           </Link>
@@ -91,7 +91,7 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
-            <div className="px-10 py-6 sm:gap-8 gap-6 w-full flex flex-col">
+            <div className="px-10 py-6 sm:gap-7 gap-6 w-full flex flex-col">
               <Link
                 href={"/"}
                 className="flex w-full justify-between items-center gap-8 cursor-pointer"

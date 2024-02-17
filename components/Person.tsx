@@ -10,7 +10,7 @@ import { slideInFromTop } from "@/utils/common/motion";
 
 const Person = ({ personData, index }: { personData: PersonProps, index: number }) => {
   return (
-    <motion.div initial="hidden" animate="visible" variants={slideInFromTop(index * 0.35)} className="w-[300px] min-h-[385px] p-6 border border-neutral-200 rounded-xl bg-[#ffffff56]">
+    <motion.div initial="hidden" animate="visible" variants={slideInFromTop(index * 0.35)} className="w-[300px] min-h-[385px] p-6 border border-neutral-200 rounded-xl bg-[#ffffff56] transition-all duration-300 cursor-pointer hover:shadow-xl hover:shadow-neutral-300">
       <div className="w-full flex justify-center items-center">
         <Image
           alt="Group Member Photo"
@@ -20,7 +20,7 @@ const Person = ({ personData, index }: { personData: PersonProps, index: number 
           className="w-[50px] h-[50px] rounded-full"
         />
       </div>
-      <h1 className="text-xl font-bold text-center mt-3">{personData.name}</h1>
+      <h1 className="text-xl font-bold text-center mt-3 h-[60px]">{personData.name}</h1>
       <h2 className="text-blue-500 text-sm -mt-1 text-center">
         {personData.email}
       </h2>

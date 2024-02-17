@@ -4,10 +4,10 @@ import React from "react";
 const page = () => {
   return (
     <div className="w-full flex flex-col items-center p-6 sm:p-[5%]">
-      <section className="w-full bg-blue-50 rounded-xl p-20 flex flex-col items-center sm:flex-nowrap flex-wrap">
-        <span className="text-xl underline underline-offset-4 mt-10 sm:mt-0">Features</span>
-        <h1 className="text-4xl font-bold mt-2 text-center">Nosso guia para você</h1>
-        <p className="text-center mt-10 max-w-[450px] sm:text-[#3e3e3e] text-[#626B7F]">
+      <section className="mt-20 sm:mt-0 max-w-[1250px] w-full bg-gradient-to-r from-blue-900 to-blue-700 rounded-xl sm:p-20 p-10 flex flex-col items-center sm:flex-nowrap flex-wrap">
+        <span className="text-2xl font-extrabold uppercase mt-10 sm:mt-0 text-blue-300">Features</span>
+        <h1 className="text-4xl font-bold mt-2 text-center text-white">Nosso guia para você</h1>
+        <p className="text-center mt-10 max-w-[450px] text-white">
           Nessa seção você poderá conferir todas as informações relacionadas ao
           nosso dispositivo, além disso, tudo que é necessário para utiliza-lô
           está contido aqui
@@ -26,8 +26,9 @@ const page = () => {
         <div className="flex justify-between w-full gap-12 sm:flex-nowrap flex-wrap">
           <div className="w-full">
             <div className="flex flex-col">
-              <h3 className="text-lg ml-2">Introdução</h3>
-              <h1 className="font sm:text-[72px] text-4xl sm:text-6xl cursor-default">
+              <h3 className="text-lg">Introdução</h3>
+              <div className="my-2 border-t-2 border-blue-300 w-[45px]" />
+              <h1 className="mt-3 font sm:text-[72px] text-4xl sm:text-6xl cursor-default">
                 O que é
               </h1>
               <h1 className="font sm:text-[72px] text-4xl sm:text-6xl sm:-mt-4 cursor-default">
@@ -79,6 +80,7 @@ const page = () => {
               src={"/assets/music.svg"}
               width={300}
               height={300}
+              className="selection:bg-transparent transition-all duration-300 hover:scale-105 cursor-pointer"
             />
           </div>
         </div>
@@ -92,12 +94,14 @@ const page = () => {
               src={"/assets/manual.svg"}
               width={300}
               height={300}
+              className="selection:bg-transparent transition-all duration-300 hover:scale-105 cursor-pointer"
             />
           </div>
           <div className="w-full">
             <div className="flex flex-col items-end">
-              <h3 className="text-lg ml-2">Montagem</h3>
-              <h1 className="font sm:text-[72px] text-4xl sm:text-6xl cursor-default text-right">
+              <h3 className="text-lg">Montagem</h3>
+              <div className="my-2 border-t-2 border-blue-300 w-[45px]" />
+              <h1 className="mt-3 font sm:text-[72px] text-4xl sm:text-6xl cursor-default text-right">
                 Instruções
               </h1>
               <h1 className="font sm:text-[72px] text-4xl sm:text-6xl sm:-mt-4 cursor-default text-right">
@@ -149,8 +153,9 @@ const page = () => {
         <div className="flex justify-between w-full gap-12 sm:flex-nowrap flex-wrap">
           <div className="w-full">
             <div className="flex flex-col">
-              <h3 className="text-lg ml-2">Conexão</h3>
-              <h1 className="font sm:text-[72px] text-4xl sm:text-6xl cursor-default">
+              <h3 className="text-lg">Conexão</h3>
+              <div className="my-2 border-t-2 border-blue-300 w-[45px]" />
+              <h1 className="mt-3 font sm:text-[72px] text-4xl sm:text-6xl cursor-default">
                 Conexões e
               </h1>
               <h1 className="font sm:text-[72px] text-4xl sm:text-6xl sm:-mt-4 cursor-default">
@@ -203,6 +208,7 @@ const page = () => {
               src={"/assets/connect.svg"}
               width={300}
               height={300}
+              className="selection:bg-transparent transition-all duration-300 hover:scale-105 cursor-pointer"
             />
           </div>
         </div>

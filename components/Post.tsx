@@ -116,7 +116,7 @@ const Post = ({
             <div className="w-full flex justify-end">
               <Link
                 href={`/blog/post/${content.id}`}
-                className="bg-blue-900 text-white px-4 py-1 text-center rounded-xl transition-all duration-300 cursor-pointer hover:bg-blue-800"
+                className="text-blue-900 text-sm px-4 py-1 text-center rounded-xl cursor-pointer"
               >
                 Responder
               </Link>

@@ -8,11 +8,11 @@ const Sidebar = () => {
         <h1 className="pb-2 mb-2 border-b border-neutral-200 font-bold text-xl">
           Tags Favoritas
         </h1>
-        <p className="mt-2 text-[#626B7F]">
+        <p className="mt-2 text-[#626B7F] text-sm">
           Selecione algumas tags para acompanhar posts e dúvidas relacionadas ao
           tema desejado.
         </p>
-        <div className="w-full text-center mt-8 text-blue-500 cursor-pointer transition-all duration-300 hover:text-blue-600">
+        <div className="w-full text-center mt-8 text-blue-600 cursor-pointer transition-all duration-300 hover:text-blue-600">
           Selecionar tags
         </div>
       </div>
@@ -20,11 +20,11 @@ const Sidebar = () => {
         <h1 className="pb-2 mb-2 border-b border-neutral-200 font-bold text-xl">
           Tags Ignoradas
         </h1>
-        <p className="mt-2 text-[#626B7F]">
+        <p className="mt-2 text-[#626B7F] text-sm">
           Selecione algumas tags nas quais posts e dúvidas relacionadas ao tema
           sejam ocultados.
         </p>
-        <div className="w-full text-center mt-8 text-blue-500 cursor-pointer transition-all duration-300 hover:text-blue-600">
+        <div className="w-full text-center mt-8 text-blue-600 cursor-pointer transition-all duration-300 hover:text-blue-600">
           Selecionar tags
         </div>
       </div>
@@ -32,14 +32,14 @@ const Sidebar = () => {
         <h1 className="pb-2 mb-2 border-b border-neutral-200 font-bold text-xl">
           Nossa IA de Suporte
         </h1>
-        <p className="mt-2 text-[#626B7F] text-justify">
+        <p className="mt-2 text-[#626B7F] text-justify text-sm">
           Precisando de ajuda? de uma olha na nossa nova IA de suporte ao
           usuário, chamada Getúlio. Com ela é possível tirar suas dúvidas sobre
           os mais diversos temas. É uma grande conquista para a nossa equipe
           conseguir proporcionar essas features aos nossos usuários
         </p>
         <div className="w-full text-center mt-8">
-          <Link href={"/support"} className="text-blue-500 cursor-pointer transition-all duration-300 hover:text-blue-600">Conferir</Link>
+          <Link href={"/support"} className="text-blue-600 cursor-pointer transition-all duration-300 hover:text-blue-600">Conferir</Link>
         </div>
       </div>
     </div>
